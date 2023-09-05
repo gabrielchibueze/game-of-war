@@ -35,7 +35,7 @@ async function displayDrawnCards(){
         if(data.remaining === 0){
             drawCard.disabled = true
             if(gabbyScore > PlayerScore){
-                heading.textContent = "The Gabby won the Game"
+                heading.textContent = "Gabby won the Game"
             }
             else if(gabbyScore < PlayerScore){
                 heading.textContent = "You won the Game!!"
