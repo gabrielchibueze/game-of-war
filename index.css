@@ -1,0 +1,98 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-image: url(/images/deckofcards.jpeg);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight:bolder;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-deck {
+
+}
+#top {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+#top h4 {
+    /* align-self: flex-start; */
+    justify-content: flex-end;
+    margin-top: 7px;
+    text-shadow: 2px black;
+   
+}
+#computer-score {
+    margin: 0px;
+    padding: 0px;
+}
+
+.heading {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+button {
+    background-color: yellow;
+    border: solid yellow 3px;
+    height: fit-content;
+    padding: 5px;
+    cursor: pointer;
+    font-size: large;   
+}
+button:disabled {
+    cursor: not-allowed;
+}
+#card1-slot, #card2-slot {
+    background-color: rgba(233, 233, 204, 0.582);
+    border:  1px solid black;
+    border-radius: 8px;
+    height: 120px;
+    width: calc(120px * 5/7);
+    /* border: none; */
+}
+
+#card1-slot {
+    margin-bottom: 10px;
+}
+#draw-card {
+    align-self: stretch;
+}
+.retrievedcard, .retrievedcard2 {
+    height: 120px;
+    border-radius: 8px;
+    width: calc(120px * 5/7);
+}
+@media (min-width: 499px){
+    html, body {
+        background-image: url(/images/blackjack.jpeg);
+    }
+    #gabby-score, #your-score {
+        font-size: 20px;
+    }
+    #card1-slot, #card2-slot {
+        border-radius: 10px;
+        height: 150px;
+        width: calc(150px * 5/7);
+        /* border: none; */
+    }
+
+    #card1-slot {
+        margin-bottom: 10px;
+    }
+    .retrievedcard, .retrievedcard2 {
+        height: 150px;
+        border-radius: 10px;
+        width: calc(150px * 5/7);
+    }
+}
